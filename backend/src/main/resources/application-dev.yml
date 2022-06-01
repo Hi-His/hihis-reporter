@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@172.27.12.1:1521/orcl
+    username: prd_his
+    password: bsoft123
+#  sql:
+#    init:
+#      schema-locations: classpath:db/schema-h2.sql
+#      data-locations: classpath:db/data-h2.sql
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
